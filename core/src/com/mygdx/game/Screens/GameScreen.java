@@ -294,7 +294,7 @@ public class GameScreen implements Screen {
             }
         }
         if (dead_enemies.size == 0) {
-            parent.setScreen(new GameOverScreen(parent));
+            parent.setScreen(new WinScreen(parent));
         }
         //BULLETS UPDATING
         for (int i = 0; i < bullets.size; i++) {
