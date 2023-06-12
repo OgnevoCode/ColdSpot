@@ -14,7 +14,6 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-//import com.mygdx.game.Tools.Vector2;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
@@ -295,7 +294,7 @@ public class GameScreen implements Screen {
             }
         }
         if (dead_enemies.size == 0) {
-            parent.changeScreen(Main.WIN);
+            parent.setScreen(new GameOverScreen(parent));
         }
         //BULLETS UPDATING
         for (int i = 0; i < bullets.size; i++) {
